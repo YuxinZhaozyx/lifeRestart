@@ -6183,7 +6183,7 @@
                       t.setTheme(localStorage.getItem('theme'))
                   })
                 var n = $(
-                    '\n        <div id="main">\n            <div class="head" style="font-size: 1.6rem">天赋抽卡</div>\n            <button id="random" class="mainbtn" style="top: 50%;">130连抽！</button>\n            <ul id="talents" class="selectlist"></ul>\n            <button id="next" class="mainbtn" style="top:auto; bottom:0.1em">请选择3个</button>\n        </div>\n        '
+                    '\n        <div id="main">\n            <div class="head" style="font-size: 1.6rem">天赋抽卡</div>\n            <button id="random" class="mainbtn" style="top: 50%;">130连抽！</button>\n            <ul id="talents" class="selectlist"></ul>\n            <button id="next" class="mainbtn" style="top:auto; bottom:0.1em">请选择10个</button>\n        </div>\n        '
                   ),
                   i = function (t) {
                     var e = t.grade,
