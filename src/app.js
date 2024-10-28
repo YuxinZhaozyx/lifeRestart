@@ -323,7 +323,7 @@ class App{
         summaryPage
             .find('#again')
             .click(()=>{
-                this.times ++;
+                this.times += 100;
                 this.#life.talentExtend(this.#selectedExtendTalent);
                 this.#selectedExtendTalent = null;
                 this.#talentSelected.clear();
