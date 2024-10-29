@@ -6183,7 +6183,7 @@
                       t.setTheme(localStorage.getItem('theme'))
                   })
                 var n = $(
-                    '\n        <div id="main">\n            <div class="head" style="font-size: 1.6rem">天赋抽卡</div>\n            <button id="random" class="mainbtn" style="top: 50%;">130连抽！</button>\n            <ul id="talents" class="selectlist"></ul>\n            <button id="next" class="mainbtn" style="top:auto; bottom:0.1em">请选择10个</button>\n        </div>\n        '
+                    '\n        <div id="main">\n            <div class="head" style="font-size: 1.6rem">天赋抽卡</div>\n            <button id="random" class="mainbtn" style="top: 50%;">130连抽！</button>\n            <ul id="talents" class="selectlist"></ul>\n            <button id="next" class="mainbtn" style="top:auto; bottom:0.1em">请选择18个</button>\n        </div>\n        '
                   ),
                   i = function (t) {
                     var e = t.grade,
@@ -6208,8 +6208,8 @@
                           if (n.hasClass('selected'))
                             n.removeClass('selected'), rt(t, ut).delete(r)
                           else {
-                            if (10 == rt(t, ut).size)
-                              return void t.hint('只能选10个天赋')
+                            if (18 == rt(t, ut).size)
+                              return void t.hint('只能选18个天赋')
                             var e = rt(t, ot).exclusive(
                               Array.from(rt(t, ut)).map(function (t) {
                                 return t.id
@@ -6315,7 +6315,7 @@
                     })
                 }),
                   n.find('#next').click(function () {
-                    10 == rt(t, ut).size
+                    18 == rt(t, ut).size
                       ? (nt(
                           t,
                           ct,
@@ -6327,7 +6327,7 @@
                             )
                         ),
                         t.switch('property'))
-                      : t.hint('请选择10个天赋')
+                      : t.hint('请选择18个天赋')
                   })
                 var a = $(
                     '\n        <div id="main">\n            <div class="head" style="font-size: 1.6rem">\n                调整初始属性<br>\n                <div id="total" style="font-size:1rem; font-weight:normal;">可用属性点：0</div>\n            </div>\n            <ul id="propertyAllocation" class="propinitial"></ul>\n            <button id="random" class="mainbtn" style="top:auto; bottom:7rem">随机分配</button>\n            <button id="start" class="mainbtn" style="top:auto; bottom:0.1rem">开始新人生</button>\n        </div>\n        '
